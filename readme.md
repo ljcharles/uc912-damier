@@ -30,4 +30,4 @@ damier (avecPieces = 0, couleurCasesNoires = [.65, .49, .36], couleurCasesBlanch
 ```
 
 ## Résultat 
-![resultat](https://drive.google.com/file/d/1UpQQtVA_mW4-mm4kd5ppPvR15TSq-1Lp/view?usp=sharing)
+![resultat](https://image.ibb.co/gsrU3p/damier_Openscade_module.png)
