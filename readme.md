@@ -34,4 +34,4 @@ damier (avecPieces = 0, couleurCasesNoires = [.65, .49, .36], couleurCasesBlanch
 
 
 ## Résultat Animation
-![animation](https://previews.dropbox.com/p/orig/AAP9InYUyYhWPH7LC_sSzYBTfnF3XtsbIH0O7-3gmphvz9VG5cpCplI6SyFHURpEu6U-mJLku0lFc2wkcissuFOKfnJc1QWiIlXtiP1GSqHlf_it5adzM-PoqcHaPM0_NyPG9h6VY9P2SRkzbBLGKTDO/p.gif)
+![animation](https://image.ibb.co/c85Eop/resultat.gif)
