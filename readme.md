@@ -1,6 +1,6 @@
 # Damier Openscad
 
-##Introduction 
+## Introduction 
 
 Module pour faire un damier avec ses pièces.
 
