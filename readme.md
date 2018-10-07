@@ -30,4 +30,4 @@ damier (avecPieces = 0, couleurCasesNoires = [.65, .49, .36], couleurCasesBlanch
 ```
 
 ## Résultat 
-![resultat damier](https://imgur.com/a/hl3vXor)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/hl3vXor" data-context="false"><a href="//imgur.com/hl3vXor"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
