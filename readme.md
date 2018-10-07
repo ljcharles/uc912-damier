@@ -23,5 +23,5 @@ damier (avecPieces = 0, couleurCasesBlanches="white",couleurCasesNoires="black")
 
 Code avec tout les paramètres disponibles :
 ```
-damier (avecPieces = 0, couleurCasesNoires = [.65, .49, .36], couleurCasesBlanches = [.91, .82, .67],couleurPiecesBlanches = [.96, .76, .29],couleurPiecesNoires = [.51, .41, .36],epaisseurDamier = .5,epaisseurPieces = .2);
+damier (avecPieces = 0, couleurCasesNoires = [.65, .49, .36], couleurCasesBlanches = [.91, .82, .67],couleurPiecesBlanches = [.96, .76, .29],couleurPiecesNoires = [.51, .41, .36],epaisseurDamier = .5,epaisseurPieces = .2, avecAnimation = 1);
 ```

@@ -13,9 +13,10 @@
   couleurPiecesNoires : tableau [r,g,b] ou couleur standardisé ex: "red"
   epaisseurDamier : épaisseur du damier
   epaisseurPieces : épaisseur des pièces
+  avecAnimation  : animation du déplacement d'une pièce
 */
 
-module damier (avecPieces = 0, couleurCasesNoires = [.65, .49, .36], couleurCasesBlanches = [.91, .82, .67],couleurPiecesBlanches = [.96, .76, .29],couleurPiecesNoires = [.51, .41, .36],epaisseurDamier = .5,epaisseurPieces = .2)
+module damier (avecPieces = 0, couleurCasesNoires = [.65, .49, .36], couleurCasesBlanches = [.91, .82, .67],couleurPiecesBlanches = [.96, .76, .29],couleurPiecesNoires = [.51, .41, .36],epaisseurDamier = .5,epaisseurPieces = .2, avecAnimation = 1)
 {
     rangeesExclues = [4,5];
     rangeesPiecesNoires = [0,1,2,3];
@@ -42,7 +43,16 @@ module damier (avecPieces = 0, couleurCasesNoires = [.65, .49, .36], couleurCase
                             if((x == 9) && (y == 4)) {
                                 translate([x+.5,y+.5,.5]) color(couleurPiecesBlanches) cylinder(r=.5,h=epaisseurPieces, $fn = 6);
                             }else{
-                                translate([x+.5,y+.5,.5]) color(couleurPiecesBlanches) cylinder(r=.5,h=epaisseurPieces, $fn = 50);
+                                if(avecAnimation) {
+                                    if((x != 6) || (y != 5)){
+                                        translate([x+.5,y+.5,.5]) color(couleurPiecesBlanches) cylinder(r=.5,h=epaisseurPieces, $fn = 50);
+                                    }else{
+                                        // Petite animation
+                                        translate([(x+$t*-1.5),(y+$t*-1.5),.5]) color(couleurPiecesBlanches) cylinder(r=.5,h=epaisseurPieces, $fn = 50);
+                                    }
+                                 }else{
+                                        translate([x+.5,y+.5,.5]) color(couleurPiecesBlanches) cylinder(r=.5,h=epaisseurPieces, $fn = 50);
+                                  }
                             }
                          }
                     }
@@ -52,6 +62,6 @@ module damier (avecPieces = 0, couleurCasesNoires = [.65, .49, .36], couleurCase
     }
 }
 //damier ();
-damier (avecPieces = 1);
+damier (avecPieces = 1, avecAnimation = 0);
 //damier (avecPieces = 1, couleurPiecesBlanches="white",couleurPiecesNoires="black");
 //damier (avecPieces = 0, couleurCasesBlanches="white",couleurCasesNoires="black");
